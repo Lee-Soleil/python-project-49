@@ -18,7 +18,7 @@ def main():
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        if (random_number % 2 == 0 and answer == 'yes') or (random_number % 2 !=0 and answer == 'no'):
+        if (random_number % 2 == 0 and answer == 'yes') or (random_number % 2 != 0 and answer == 'no'):
             print('Correct!')
             if i == 2:
                 print("Congratulations, " + name + "!")
@@ -27,7 +27,6 @@ def main():
             print("Let's try again, " + name + "!")
             break
         i += 1
-
 
 
 if __name__ == '__main__':
