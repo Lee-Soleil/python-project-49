@@ -12,7 +12,7 @@ def get_question():
     operation = ''.join(choice('+-*') for i in range(1))
     question = str(random_number_one) + ' ' + operation + ' ' + str(random_number_two)
     return question
-    
+
 
 def get_correct_answer():
     if operation == '+':

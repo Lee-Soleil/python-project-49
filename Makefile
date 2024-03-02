@@ -18,5 +18,11 @@ package-reinstall:
 
 lint:
 	poetry run flake8 brain_games/scripts/brain_calc.py
+	poetry run flake8 brain_games/scripts/brain_even.py
+	poetry run flake8 brain_games/games/calc.py
+	poetry run flake8 brain_games/games/even.py
+
+
+
 
 
