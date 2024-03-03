@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Проет 'Игры разума'"
 authors = ["Le Soleil <mra4naja@list.ru>"]
 readme = "README.md"
+classifiers = ['Environment :: Console :: Curses']
+repository = 'https://github.com/Lee-Soleil/python-project-49'
 packages = [
   { include = "brain_games" },
 ]
