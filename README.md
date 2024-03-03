@@ -17,16 +17,21 @@ make package-install - установка пакетов
 5. Простое ли число? - brain-prime
 
 Проверка на чётность:
+
 [![asciicast](https://asciinema.org/a/TORQIDd443qDVzbI0YYsFaE7j.svg)](https://asciinema.org/a/TORQIDd443qDVzbI0YYsFaE7j)
 
 Калькулятор:
+
 [![asciicast](https://asciinema.org/a/GyHItKye0MtzVVNoQp85aObXo.svg)](https://asciinema.org/a/GyHItKye0MtzVVNoQp85aObXo)
 
 НОД:
+
 [![asciicast](https://asciinema.org/a/t7QtHPptuwNUVKig7BNfTSANU.svg)](https://asciinema.org/a/t7QtHPptuwNUVKig7BNfTSANU)
 
 Арифметическая прогрессия:
+
 [![asciicast](https://asciinema.org/a/O3XlCTK15yJt9KQJOX2PYOVOA.svg)](https://asciinema.org/a/O3XlCTK15yJt9KQJOX2PYOVOA)
 
 Простое ли число:
+
 [![asciicast](https://asciinema.org/a/YbIsqB6weoAYD2nMHyMSBEUYN.svg)](https://asciinema.org/a/YbIsqB6weoAYD2nMHyMSBEUYN)
