@@ -2,7 +2,7 @@ from random import randint
 
 
 rules_of_the_game = 'Answer "yes" if given number \
-                    is prime. Otherwise answer "no".'
+is prime. Otherwise answer "no".'
 
 
 def get_question():
