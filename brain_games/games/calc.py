@@ -10,7 +10,8 @@ def get_question():
     random_number_one = randint(1, 10)
     random_number_two = randint(1, 10)
     operation = ''.join(choice('+-*') for i in range(1))
-    question = str(random_number_one) + ' ' + operation + ' ' + str(random_number_two)
+    question = (str(random_number_one) + ' ' + operation
+                + ' ' + str(random_number_two))
     return question
 
 

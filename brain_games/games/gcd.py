@@ -12,22 +12,23 @@ def get_question():
     return question
 
 
+def get_denominator_one(random_number):
+    divider = []
+    for i in range(1, random_number + 1):
+        if random_number % i == 0:
+            divider.append(i)
+        i += 1
+    return divider
+
+
 def get_correct_answer():
-    denominator_one = []
-    for i in range(1, random_number_one + 1):
-        if random_number_one % i == 0:
-            denominator_one.append(i)
-        i += 1
-    denominator_two = []
-    for i in range(1, random_number_two + 1):
-        if random_number_two % i == 0:
-            denominator_two.append(i)
-        i += 1
-    denominators = []
-    for item_one in denominator_one:
-        for item_two in denominator_two:
+    divider_one = get_denominator_one(random_number_one)
+    divider_two = get_denominator_one(random_number_two)
+    dividers = []
+    for item_one in divider_one:
+        for item_two in divider_two:
             if item_one == item_two:
-                denominators.append(item_one)
-    denominators.sort(reverse=True)
-    correct_answer = str(denominators[0])
+                dividers.append(item_one)
+    dividers.sort(reverse=True)
+    correct_answer = str(dividers[0])
     return correct_answer

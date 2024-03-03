@@ -22,7 +22,8 @@ def play(game):
             if count_round == 2:
                 print("Congratulations, " + name + "!")
         else:
-            print("'" + answer + "' is wrong answer ;(. Correct answer was '" + str(correct_answer) + "'.")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{str(correct_answer)}'")
             print("Let's try again, " + name + "!")
             break
         count_round += 1

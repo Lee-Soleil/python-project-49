@@ -22,7 +22,8 @@ def get_question():
     for i in range(start_progression, unknown_number, step_progression):
         full_progression = full_progression + str(i) + ' '
     full_progression = full_progression + '.. '
-    for i in range(unknown_number + step_progression, end_progression + 1, step_progression):
+    for i in range(unknown_number + step_progression,
+                   end_progression + 1, step_progression):
         full_progression = full_progression + str(i) + ' '
     question = full_progression
     return question
