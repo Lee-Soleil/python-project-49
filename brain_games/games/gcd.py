@@ -21,14 +21,19 @@ def get_denominator_one(random_number):
     return divider
 
 
+def compare_deviders(divider_o, divider_t):
+    dividers = []
+    for item_one in divider_o:
+        for item_two in divider_t:
+            if item_one == item_two:
+                dividers.append(item_one)
+    return dividers
+
+
 def get_correct_answer():
     divider_one = get_denominator_one(random_number_one)
     divider_two = get_denominator_one(random_number_two)
-    dividers = []
-    for item_one in divider_one:
-        for item_two in divider_two:
-            if item_one == item_two:
-                dividers.append(item_one)
+    dividers = compare_deviders(divider_one, divider_two)
     dividers.sort(reverse=True)
     correct_answer = str(dividers[0])
     return correct_answer
