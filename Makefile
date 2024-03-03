@@ -17,12 +17,8 @@ package-reinstall:
 	pip install --user --force-reinstall dist/*.whl
 
 lint:
-	poetry run flake8 brain_games/scripts/brain_calc.py
-	poetry run flake8 brain_games/scripts/brain_even.py
-	poetry run flake8 brain_games/scripts/brain_gcd.py
-	poetry run flake8 brain_games/games/calc.py
-	poetry run flake8 brain_games/games/even.py
-	poetry run flake8 brain_games/games/gcd.py
+	poetry run flake8 brain_games/scripts/brain_progression.py
+	poetry run flake8 brain_games/games/progression.py
 
 
 
