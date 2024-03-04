@@ -24,9 +24,8 @@ def get_denominator_one(random_number):
 def compare_deviders(divider_o, divider_t):
     dividers = []
     for item_one in divider_o:
-        for item_two in divider_t:
-            if item_one == item_two:
-                dividers.append(item_one)
+        if item_one in divider_t:
+            dividers.append(item_one)
     return dividers
 
 
