@@ -24,8 +24,8 @@ def play(game):
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. "
-                  f"Correct answer was '{str(correct_answer)}'")
-            print("Let's try again, " + name + "!")
+                  f"Correct answer was '{str(correct_answer)}'.\n"
+                  f"Let's try again, " + name + "!")
             break
         if COUNT_ROUND == 3 and answer == correct_answer:
             print("Congratulations, " + name + "!")
