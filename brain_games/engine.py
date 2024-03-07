@@ -1,6 +1,9 @@
 import prompt
 
 
+COUNT_ROUND = 3
+
+
 def welcome_user():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
@@ -10,8 +13,7 @@ def welcome_user():
 
 def play(game):
     name = welcome_user()
-    print(game.rules_of_the_game)
-    COUNT_ROUND = 3
+    print(game.RULES_OF_THE_GAME)
     i = 1
     while i <= COUNT_ROUND:
         question, correct_answer = game.generate_question_answer()

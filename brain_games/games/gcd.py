@@ -1,17 +1,21 @@
 from random import randint
 
 
-rules_of_the_game = 'Find the greatest common divisor of given numbers.'
+RULES_OF_THE_GAME = 'Find the greatest common divisor of given numbers.'
+
+
+def gcd(x, y):
+    while x != y:
+        if x > y:
+            x = x - y
+        else:
+            y = y - x
+    return x
 
 
 def generate_question_answer():
-    random_number_one = randint(1, 50)
-    random_number_two = randint(1, 50)
-    question = str(random_number_one) + ' ' + str(random_number_two)
-    while random_number_one != random_number_two:
-        if random_number_one > random_number_two:
-            random_number_one = random_number_one - random_number_two
-        else:
-            random_number_two = random_number_two - random_number_one
-    correct_answer = str(random_number_one)
+    a = randint(1, 50)
+    b = randint(1, 50)
+    question = str(a) + ' ' + str(b)
+    correct_answer = str(gcd(a, b))
     return question, correct_answer

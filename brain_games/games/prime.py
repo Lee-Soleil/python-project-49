@@ -1,16 +1,23 @@
 from random import randint
 
 
-rules_of_the_game = 'Answer "yes" if given number \
+RULES_OF_THE_GAME = 'Answer "yes" if given number \
 is prime. Otherwise answer "no".'
+
+
+def is_prime(x):
+    if x == 1:
+        return False
+    for i in range(2, (x // 2) + 1):
+        if x % i == 0:
+            return False
+    return True
 
 
 def generate_question_answer():
     random_number = randint(1, 50)
     question = random_number
-    if random_number == 1:
+    if is_prime(random_number):
+        return question, 'yes'
+    else:
         return question, 'no'
-    for i in range(2, (random_number // 2) + 1):
-        if random_number % i == 0:
-            return question, 'no'
-    return question, 'yes'
